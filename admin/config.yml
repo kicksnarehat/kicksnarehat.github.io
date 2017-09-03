@@ -1,0 +1,14 @@
+backend:
+  name: github
+  repo: kicksnarehat/kicksnarehat.github.io
+
+media_folder: assets/media
+
+collections:
+  - name: post
+    label: Post
+    folder: _posts
+    create: true
+    fields:
+      - {name: title, label: Title}
+      - {name: body, label: Body, widget: markdown}
