@@ -17,7 +17,7 @@ title: Kick Snare Hat
 email: kicksnarehat@gmail.com
 # description: Nate plays drums
 # baseurl: "" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://kicksnarehat.github.io
 date_format: "%b %-d, %Y"
 twitter_username: kicksnarehat2
 instagram_username: kicksnarehat2
