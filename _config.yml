@@ -27,8 +27,8 @@ paginate: 5
 
 # Build settings
 markdown: kramdown
-# theme: midnight
-theme: jekyll-theme-hydeout
+theme: minima
+#theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
   - jekyll-gist
