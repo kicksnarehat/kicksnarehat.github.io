@@ -1,14 +1,21 @@
 backend:
   name: github
   repo: kicksnarehat/kicksnarehat.github.io
+  #base_url: https://kicksnarehat.github.io
 
 media_folder: assets/media
+publish_mode: editorial_workflow
 
 collections:
   - name: post
     label: Post
     folder: _posts
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
       - {name: title, label: Title}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {slug: slug, label: Slug }
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: Tags, name: tags, widget: list}
       - {name: body, label: Body, widget: markdown}
