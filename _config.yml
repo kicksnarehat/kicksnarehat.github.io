@@ -27,7 +27,7 @@ paginate: 5
 
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
 #theme: jekyll-theme-hydeout
 plugins:
   - jekyll-feed
