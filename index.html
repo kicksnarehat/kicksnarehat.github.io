@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
-    <title>Snowpack App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/_dist_/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+	<link rel="modulepreload" href="/_app/entry-a40275eb.js">
+	<link rel="modulepreload" href="/_app/client-9f213ff0.js">
+	<link rel="modulepreload" href="/_app/index-0670ca02.js">
+	<link rel="modulepreload" href="/_app/inject_styles-cd877ae9.js">
+	<link rel="stylesheet" href="/_app/index-788c229e.css">
+	
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+	<script type="module">
+		import { start } from '/_app/entry-a40275eb.js';
+
+		start({
+			target: document.body
+		});
+	</script>
+</head>
+<body>
+	
+
+
+<main class="svelte-i4crzb"><h1 class="svelte-i4crzb">Hello world!</h1>
+
+	<button class="svelte-qxv3xi">Clicks: 0
+</button>
+	<p class="svelte-i4crzb">Visit the <a href="https://svelte.dev" class="svelte-i4crzb">svelte.dev</a> to learn how to build Svelte apps.</p>
+</main>
+<script>
+	__SVELTE__ = {
+		baseUrl: "",
+		status: 200,
+		error: null,
+		preloaded: [{},{}],
+		session: {}
+	};
+</script>
+</body>
 </html>

@@ -1,9 +1,0 @@
-
-const code = "body{color:#333;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}main{margin:1rem 3rem}footer{border-top:1px solid #ccc;padding:0 3rem}footer a,main a{color:#0064c8}footer a:visited,main a:visited{color:#0050a0}";
-
-const styleEl = document.createElement("style");
-const codeEl = document.createTextNode(code);
-styleEl.type = 'text/css';
-
-styleEl.appendChild(codeEl);
-document.head.appendChild(styleEl);
