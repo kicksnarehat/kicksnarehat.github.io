@@ -1,0 +1,9 @@
+
+const code = "label.svelte-j7uns6.svelte-j7uns6{display:grid;grid-template-columns:minmax(10%,30%) auto auto;grid-gap:.5em;gap:.5em;align-items:start;margin-top:1em}span.svelte-j7uns6.svelte-j7uns6{grid-column:1/2;text-align:right}span.required.svelte-j7uns6.svelte-j7uns6:before{content:\"*\"}input.svelte-j7uns6+span.svelte-j7uns6{grid-column:3/4;text-align:left}input.svelte-j7uns6.svelte-j7uns6,select.svelte-j7uns6.svelte-j7uns6,textarea.svelte-j7uns6.svelte-j7uns6{grid-column:2/4}input[type=checkbox].svelte-j7uns6.svelte-j7uns6{grid-column:2/3}";
+
+const styleEl = document.createElement("style");
+const codeEl = document.createTextNode(code);
+styleEl.type = 'text/css';
+
+styleEl.appendChild(codeEl);
+document.head.appendChild(styleEl);

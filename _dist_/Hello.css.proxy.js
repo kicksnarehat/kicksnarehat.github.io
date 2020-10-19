@@ -1,0 +1,9 @@
+
+const code = "h2.svelte-1lyppnd.svelte-1lyppnd{color:#ff3e00;font-size:4em;font-weight:100}.wrap.svelte-1lyppnd.svelte-1lyppnd{display:grid;grid-template-columns:minmax(200px,1fr) 2fr 1fr}div.svelte-1lyppnd+div.svelte-1lyppnd{background:red}";
+
+const styleEl = document.createElement("style");
+const codeEl = document.createTextNode(code);
+styleEl.type = 'text/css';
+
+styleEl.appendChild(codeEl);
+document.head.appendChild(styleEl);

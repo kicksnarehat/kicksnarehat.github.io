@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "minireset.css": "./minireset.css.js",
+    "navaid": "./navaid.js",
+    "svelte/internal": "./svelte/internal.js",
+    "svelte/store": "./svelte/store.js"
+  }
+}
