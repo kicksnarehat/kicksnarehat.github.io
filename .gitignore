@@ -1,6 +1,7 @@
-.DS_Store
-node_modules
-/.svelte
-/build
-/functions
-.env
+.build
+build/
+web_modules/
+node_modules/
+tmp/
+.svelte/
+*.log
