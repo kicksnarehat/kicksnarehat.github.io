@@ -29,7 +29,7 @@
       <input type="checkbox" {required} bind:checked on:change />
       <span class={required ? 'required' : ''}>{label}</span>
     </label>
-  {:else if type === 'radio'}
+    <!-- {:else if type === 'radio'}
     <fieldset>
       <legend class={required ? 'required' : ''}>{label}</legend>
       <div class="radio-group">
@@ -45,7 +45,7 @@
           </label>
         {/each}
       </div>
-    </fieldset>
+    </fieldset> -->
   {:else}
     <label>
       <span class={required ? 'required' : ''}>{label}</span>

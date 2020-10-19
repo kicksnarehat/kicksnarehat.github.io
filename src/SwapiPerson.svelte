@@ -35,9 +35,9 @@
 {/await}
 
 <style>
-  .error {
+  /* .error {
     color: red;
-  }
+  } */
   .character {
     color: rgb(109, 53, 109);
     font-size: large;
