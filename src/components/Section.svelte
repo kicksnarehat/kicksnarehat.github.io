@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   export let title = 'Default Title';
 </script>
 
@@ -17,7 +17,7 @@
   </slot>
 </section>
 
-<style lang="postcss">
+<style>
   section {
     border: 1px solid rgb(226, 219, 219);
     border-radius: 0.375rem;
