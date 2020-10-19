@@ -1,11 +1,7 @@
-const sveltePreprocess = require('svelte-preprocess');
-
 module.exports = {
-    preprocess: sveltePreprocess({
-        defaults: {
-            script: 'typescript',
-            style: 'postcss',
-        },
-        postcss: true,
-    })
-}
+	// By default, `npm run build` will create a standard Node app.
+	// You can create optimized builds for different platforms by
+	// specifying a different adapter
+	// adapter: '@sveltejs/adapter-node'
+	adapter: '@sveltejs/adapter-static',
+};
