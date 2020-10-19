@@ -1,7 +1,0 @@
-{
-  "singleQuote": true,
-  "plugins": [
-    "svelte"
-  ],
-  "svelteSortOrder": "scripts-markup-styles"
-}
