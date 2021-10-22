@@ -1,5 +1,6 @@
 {
-  "name": "astro-deploy-sandbox",
+  "name": "kicksnarehat.github.io",
+  "description": "demo/test of astro.build deploy to gh-pages",
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {

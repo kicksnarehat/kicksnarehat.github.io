@@ -8,7 +8,7 @@ if (bodyTitle===undefined) {
 } else if ([false, null, ''].includes(bodyTitle)) {
   bodyTitle = false;
 }
-const baseUrl = import.meta.env.NODE_ENV==='production' ? Astro.site.pathname : "/";
+// const baseUrl = import.meta.env.NODE_ENV==='production' ? Astro.site.pathname : "/";
 
 ---
 <html lang="en">
@@ -16,22 +16,19 @@ const baseUrl = import.meta.env.NODE_ENV==='production' ? Astro.site.pathname : 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>{htmlTitle}</title>
-    <base href={baseUrl}>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style/global.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/style/global.css">
   </head>
   <body>
     <header>
       <nav>
-        <a href="./">Home</a>
-        <a href="about">About</a>
-        <a href="fetch">Fetch</a>
-        <a href="env">Import Meta</a>
-        <a href="foo">Unfound</a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/fetch">Fetch</a>
+        <a href="/foo">Unfound</a>
       </nav>
     </header>
     <main>
-    <hr/>
       {bodyTitle ? <h1>{bodyTitle}</h1> : null}
       <slot />
     </main>
