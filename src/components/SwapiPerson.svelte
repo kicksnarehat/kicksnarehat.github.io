@@ -1,25 +1,24 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
+  import type { Writable } from 'svelte/store'
   import { getData } from '../util/get'
   interface SwapiPerson {
     name: string
     birth_year: string
   }
-  function getRandomUser() {
+  let data: Writable<Promise<SwapiPerson>>
+  function setData() {
     const randomNumber = Math.floor(Math.random() * 10) + 1
-    return getData<SwapiPerson>(`https://swapi.dev/api/people/${randomNumber}/`)
+    data = getData<SwapiPerson>(`https://swapi.dev/api/people/${randomNumber}/`)
   }
-
-  let data = getRandomUser()
-  const onClick = () => {
-    data = getRandomUser()
-  }
+  onMount(setData)
 </script>
 
-<button on:click={onClick} disabled={!$data}>Reload</button>
+<button on:click={setData} disabled={!$data}>Reload</button>
 {#await $data}
   <p>Loading...</p>
 {:then person}
-  <p class="character">{person.name} (birth year: {person.birth_year})</p>
+  <p class="character">{person?.name} (birth year: {person?.birth_year})</p>
   <pre>{JSON.stringify(person, null, 2)}</pre>
 {:catch}
   <p>Oops! Error!</p>
