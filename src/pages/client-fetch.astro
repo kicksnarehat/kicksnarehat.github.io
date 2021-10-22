@@ -1,7 +1,26 @@
 ---
 import Layout from '../layouts/default.astro'
 import SwapiPerson from '../components/SwapiPerson.svelte'
+import SwapiPerson2 from '../components/SwapiPerson2.svelte'
 ---
 <Layout title="Client Fetch">
-    <SwapiPerson client:load />
+    <div class="parent">
+        <section>
+            <h2>SwapiPerson:</h2>
+            <SwapiPerson client:load />
+        </section>
+        <section>
+            <h2>SwapiPerson2:</h2>
+            <SwapiPerson2 client:load />
+        </section>
+    </div>
 </Layout>
+
+<style>
+    div.parent {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+</style>
