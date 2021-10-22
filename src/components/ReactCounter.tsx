@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 export default function ReactCounter() {
-  const [count, setCount] = useState(0);
-  const add = () => setCount((i:number) => i + 1);
-  const subtract = () => setCount((i:number) => i - 1);
+  const [count, setCount] = useState(0)
+  const add = () => setCount((i: number) => i + 1)
+  const subtract = () => setCount((i: number) => i - 1)
 
   return (
     <div id="react" className="counter">
@@ -12,5 +12,5 @@ export default function ReactCounter() {
       <pre>{count}</pre>
       <button onClick={add}>+</button>
     </div>
-  );
+  )
 }

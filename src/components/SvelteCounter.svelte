@@ -1,7 +1,7 @@
 <script>
-  let count = 0;
-  const add = () => ++count;
-  const subtract = () => --count;
+  let count = 0
+  const add = () => ++count
+  const subtract = () => --count
 </script>
 
 <div id="svelte" class="counter">
