@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/default.astro'
+import ReactCounter from '../components/ReactCounter.tsx'
+import SvelteCounter from '../components/SvelteCounter.svelte'
+import SolidCounter from '../components/SolidCounter.jsx'
+---
+<Layout title="Home" pageTitle={false}>
+    <div>
+        <img width="60" height="80" src="/assets/logo.svg" alt="Astro logo" />
+        <h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
+    </div>
+    <SolidCounter client:visible />
+    <SvelteCounter client:visible />
+    <ReactCounter client:visible />
+</Layout>
+
+<style>
+    div {
+        background: orange;
+    }
+    nav {
+        background: blue;
+    }
+</style>

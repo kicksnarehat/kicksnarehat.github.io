@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/default.astro'
+const foo = 'bar';
+const data = await fetch('https://randomuser.me/api/')
+  .then(res => {
+    if (res.status >= 400) {
+      throw new Error("Bad response from server");
+    }
+    return res.json()
+  })
+  .catch(err => {
+    console.error(err);
+  });
+---
+
+<Layout title="Fetch Running at Server">
+  <pre>
+    {JSON.stringify({foo, data}, null, 2)}
+  </pre>
+</Layout>
